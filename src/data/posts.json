@@ -1,0 +1,28 @@
+[
+  {
+    "id": "2026-02-10",
+    "title": "Eerste stagedag: onboarding en projectintro",
+    "date": "10 februari 2026",
+    "excerpt": "Vandaag heb ik mijn eerste dag gestart met onboarding, tools installeren en de eerste uitleg over het interne project.",
+    "content": [
+      "Mijn eerste stagedag begon met een korte rondleiding en kennismaking met het team. Daarna heb ik alle nodige tools geïnstalleerd, zoals VS Code, Git en de interne ontwikkelomgeving.",
+      "In de namiddag kreeg ik een overzicht van het project waar ik de komende maanden aan ga werken. We hebben de eerste taken opgedeeld en ik heb meteen een kleine bugfix mogen testen.",
+      "Mijn doel voor morgen: de codebase beter begrijpen en mijn eerste kleine feature opleveren."
+    ],
+    "images": ["/images/posts/day-1.svg"],
+    "tags": ["onboarding", "eerste dag", "tools"]
+  },
+  {
+    "id": "2026-02-11",
+    "title": "API verkennen en eerste bijdrage",
+    "date": "11 februari 2026",
+    "excerpt": "Ik heb de API-structuur verkend en een eerste bijdrage geleverd in een bestaande React-component.",
+    "content": [
+      "Vandaag heb ik de backend API-documentatie gelezen en endpoints getest met Postman. Dat gaf me meer inzicht in hoe data doorheen de applicatie stroomt.",
+      "Daarna heb ik in de frontend een kleine component aangepast zodat foutmeldingen duidelijker worden weergegeven. Mijn begeleider heeft de wijziging nagekeken en feedback gegeven.",
+      "Morgen wil ik werken aan een nettere UI voor dezelfde flow en de wijziging verder uitbreiden."
+    ],
+    "images": ["/images/posts/day-2.svg"],
+    "tags": ["react", "api", "learning"]
+  }
+]

@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Blog afbeelding dag 2</title>
+  <desc id="desc">Illustratieve banner voor een tweede blogpost.</desc>
+  <rect width="1200" height="700" fill="#f1f7fb" />
+  <rect x="80" y="80" width="1040" height="540" rx="30" fill="#ffffff" />
+  <rect x="130" y="140" width="380" height="44" rx="10" fill="#083a4f" />
+  <rect x="130" y="220" width="860" height="24" rx="8" fill="#d7e6ef" />
+  <rect x="130" y="260" width="930" height="24" rx="8" fill="#d7e6ef" />
+  <rect x="130" y="300" width="880" height="24" rx="8" fill="#d7e6ef" />
+  <circle cx="930" cy="425" r="130" fill="#169fcd" opacity="0.9" />
+  <circle cx="930" cy="425" r="70" fill="#083a4f" opacity="0.9" />
+  <text x="130" y="570" font-size="36" fill="#083a4f" font-family="Segoe UI, sans-serif">Stage Dag 2</text>
+</svg>
