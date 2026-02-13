@@ -1,6 +1,8 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import postsData from '../data/posts.json'
 import type { Post } from '../types/post'
+
+const DEFAULT_POST_IMAGE = '/images/posts/default-return.svg'
 
 const posts = [...(postsData as Post[])].sort(
   (a, b) => new Date(b.id).getTime() - new Date(a.id).getTime(),
@@ -8,34 +10,35 @@ const posts = [...(postsData as Post[])].sort(
 
 function LandingPage() {
   const latestPost = posts[0]
+  const latestPostImage = latestPost?.images.find((image) => image.trim().length > 0) || DEFAULT_POST_IMAGE
 
   return (
     <>
-      <section className="container-page relative overflow-hidden py-16 sm:py-20">
+      <section className="container-page relative overflow-hidden py-12 sm:py-16 lg:py-20">
         <div className="absolute -right-24 top-12 hidden h-52 w-52 rounded-md bg-brand-dark md:block" />
         <div className="absolute -bottom-20 -right-10 hidden h-64 w-64 rounded-full bg-brand-cyan/90 md:block" />
 
         <div className="relative grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-brand-cyan">Software Engineering Stage</p>
-            <h1 className="mt-4 text-4xl font-bold leading-tight text-brand-navy sm:text-5xl">
+            <h1 className="mt-4 text-3xl font-bold leading-tight text-brand-navy sm:text-4xl lg:text-5xl">
               Dagelijkse ervaringen uit mijn stage, helder en eerlijk gedeeld.
             </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
               Deze website is mijn stageblog. Hier documenteer ik mijn dagelijkse werk, wat ik leer, en mijn
               evolutie als software engineering intern. Zo kunnen school, mentor en begeleider mijn traject makkelijk
               opvolgen.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 to="/blog"
-                className="rounded-lg bg-brand-cyan px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
+                className="rounded-lg bg-brand-cyan px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-brand-dark"
               >
                 Bekijk blogposts
               </Link>
               <Link
                 to="/over"
-                className="rounded-lg border border-brand-dark px-5 py-3 text-sm font-semibold text-brand-dark transition hover:bg-brand-dark hover:text-white"
+                className="rounded-lg border border-brand-dark px-5 py-3 text-center text-sm font-semibold text-brand-dark transition hover:bg-brand-dark hover:text-white"
               >
                 Meer over mij
               </Link>
@@ -44,9 +47,11 @@ function LandingPage() {
 
           {latestPost ? (
             <article className="card-surface overflow-hidden">
-              {latestPost.images[0] ? (
-                <img src={latestPost.images[0]} alt={latestPost.title} className="h-56 w-full object-cover" />
-              ) : null}
+              <img
+                src={latestPostImage}
+                alt={latestPost.title}
+                className="h-48 w-full bg-white object-contain sm:h-56"
+              />
               <div className="p-6">
                 <p className="text-sm font-semibold uppercase tracking-wide text-brand-cyan">Nieuwste blogpost</p>
                 <h2 className="mt-2 text-2xl font-semibold text-brand-navy">{latestPost.title}</h2>
@@ -92,3 +97,4 @@ function LandingPage() {
 }
 
 export default LandingPage
+

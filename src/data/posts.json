@@ -1,28 +1,133 @@
 [
   {
-    "id": "2026-02-10",
-    "title": "Eerste stagedag: onboarding en projectintro",
-    "date": "10 februari 2026",
-    "excerpt": "Vandaag heb ik mijn eerste dag gestart met onboarding, tools installeren en de eerste uitleg over het interne project.",
+    "id": "2026-02-02",
+    "title": "Start van de stage en technische setup",
+    "date": "maandag 2 februari 2026",
+    "excerpt": "Kennismaking met Return, uitleg over hun werkwijze en opstart van een nieuw project dat we volledig van scratch bouwen.",
     "content": [
-      "Mijn eerste stagedag begon met een korte rondleiding en kennismaking met het team. Daarna heb ik alle nodige tools geïnstalleerd, zoals VS Code, Git en de interne ontwikkelomgeving.",
-      "In de namiddag kreeg ik een overzicht van het project waar ik de komende maanden aan ga werken. We hebben de eerste taken opgedeeld en ik heb meteen een kleine bugfix mogen testen.",
-      "Mijn doel voor morgen: de codebase beter begrijpen en mijn eerste kleine feature opleveren."
+      "Vandaag kreeg ik een introductie over Return en hun manier van werken. Ze doen consultancy en bouwen projecten voor klanten op drie manieren: met Microsoft Dynamics 365, met het Microsoft Power Platform, of volledig van scratch.",
+      "We werken vooral met C# en TypeScript. Talha en ik zijn gestart aan een nieuw project dat volledig custom gebouwd wordt.",
+      "Mijn eerste taak was de basisopzet van het project: backend in Hono, frontend met Vite en React, een lokale PostgreSQL-database via Docker, Drizzle ORM voor databasebeheer en Better Auth voor authenticatie.",
+      "Ik heb ook mijn Return-account gekregen. De communicatie verloopt via Microsoft Teams en version control gebeurt in Azure DevOps.",
+      "Na dag 1 ben ik erg tevreden: ik heb veel nieuwe dingen bijgeleerd en ik merk dat ik veel kan leren van mijn collega's."
     ],
-    "images": ["/images/posts/day-1.svg"],
-    "tags": ["onboarding", "eerste dag", "tools"]
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["onboarding", "setup", "hono", "react", "postgres", "docker"]
+  },
+  {
+    "id": "2026-02-03",
+    "title": "Eerste UI-opbouw met shadcn en TanStack Router",
+    "date": "dinsdag 3 februari 2026",
+    "excerpt": "Verder gewerkt aan het IHH-project met nieuwe frontend-tools en een eerste versie van de loginpagina.",
+    "content": [
+      "Vandaag heb ik verder gewerkt aan het IHH-project. Ik heb voor het eerst shadcn/ui geinstalleerd en geconfigureerd voor herbruikbare componenten zoals buttons en cards.",
+      "Daarna ben ik gestart met TanStack Router, ook nieuw voor mij. Ik heb de documentatie doorgenomen en AI gebruikt als ondersteuning om het correct te integreren, zonder blind te copy-pasten.",
+      "Tijdens de middag zijn we met het team gaan eten bij BelChicken. Enes heeft ons getrakteerd.",
+      "In de namiddag had ik samen met een andere stagiair een extra introductiemeeting met Enes. We kregen bijkomende bedrijfsinfo die gisteren nog niet aan bod kwam.",
+      "Daarna heb ik verder gewerkt aan de loginpagina. Die was nog niet af, dus ik plan om morgen verder te werken aan de uitwerking."
+    ],
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["frontend", "shadcn", "tanstack-router", "login", "stage"]
+  },
+  {
+    "id": "2026-02-04",
+    "title": "Loginflow afronden en eerste pull request",
+    "date": "woensdag 4 februari 2026",
+    "excerpt": "Styling afgerond volgens Figma, routing toegevoegd en na code review validatie en loading states verbeterd.",
+    "content": [
+      "Ik ben om 9u gestart en heb verder gewerkt aan de loginpagina. De styling heb ik in ongeveer twee uur afgewerkt; dat was meteen het moeilijkste deel omdat het zo dicht mogelijk bij de Figma-wireframes moest aansluiten.",
+      "Daarna heb ik de state-logica opgebouwd, het formulier afgewerkt en de redirect opgezet naar de juiste route (volunteer of admin). Ook de rest van frontend en backend heb ik verder geconfigureerd.",
+      "Na mijn push heb ik een pull request geopend. Talha heeft de code nagekeken en feedback gegeven.",
+      "Ik heb die opmerkingen verwerkt en daarna Zod-validatie toegevoegd. Daarnaast gebruikte ik TanStack Query met useMutation om loading states proper af te handelen.",
+      "Na een nieuwe push kreeg ik opnieuw feedback op de pull request, wat mij helpt om consistenter en kwaliteitsvoller te werken."
+    ],
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["figma", "code-review", "pull-request", "zod", "tanstack-query"]
+  },
+  {
+    "id": "2026-02-05",
+    "title": "Backendtaken en feedback verwerken",
+    "date": "donderdag 5 februari 2026",
+    "excerpt": "Nieuwe database- en API-taken opgepakt, iteratief feedback verwerkt en tips gekregen over AI-tools.",
+    "content": [
+      "Vandaag heb ik verder gewerkt aan het IHH-project en eerst de feedback van gisteren verwerkt.",
+      "Daarna kreeg ik nieuwe taken, onder andere het aanmaken van extra database-schema's en een endpoint om contacten op te halen.",
+      "Ik heb alles geïmplementeerd, gepusht en opnieuw feedback gekregen. Die heb ik meteen verwerkt zodat de code in lijn bleef met de verwachtingen van het team.",
+      "Talha gaf mij ook advies over AI-tools. Hij vroeg welke tools ik gebruik en raadde Cursor AI aan. Ik gebruik momenteel vooral Codex CLI en kreeg extra tips en nuttige links om daar sterker mee te werken.",
+      "Ik wil Cursor later nog een kans geven, maar voorlopig focus ik op mijn huidige workflow."
+    ],
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["backend", "database", "api", "feedback", "ai-tools"]
+  },
+  {
+    "id": "2026-02-06",
+    "title": "Weekly, monthly en teammomenten",
+    "date": "vrijdag 6 februari 2026",
+    "excerpt": "Werkdag met dashboardwerk, wekelijkse en maandelijkse meeting, en een sterk teammoment op kantoor.",
+    "content": [
+      "Ik ben om 9u gestart en werkte aan de dashboard-UI tot 10u.",
+      "Daarna hadden we een weekly meeting met bijna iedereen. We bespraken wat we deze week hadden afgerond, wat er gepland staat voor volgende week en welke struikelblokken er waren. Iedereen kreeg de kans om updates te geven.",
+      "Na de meeting werkten we verder tot de middagpauze. Om 12u30 gingen we samen naar de stad en rond 14u waren we terug op kantoor.",
+      "In de namiddag werkten we verder tot 15u. Daarna volgde de monthly meeting, die telkens op de laatste vrijdag van de maand plaatsvindt. We bespraken belangrijke bedrijfsupdates en deden een kort spel om elkaar beter te leren kennen.",
+      "Na de monthly sloten we de dag af met pizza en een teammoment met PS5. Een leuke afsluiter van een productieve eerste stageweek."
+    ],
+    "images": ["/images/posts/ps5.jpeg"],
+    "tags": ["weekly", "monthly", "dashboard", "team", "communicatie"]
+  },
+  {
+    "id": "2026-02-09",
+    "title": "Taken op, toch blijven verbeteren",
+    "date": "maandag 9 februari 2026",
+    "excerpt": "Door afwezige begeleiding en lege backlog focuste ik op het finetunen van bestaande code.",
+    "content": [
+      "Vandaag heb ik verder gewerkt aan het IHH-project. Het was een rustige, normale werkdag zonder grote events.",
+      "Mijn taken in Azure DevOps waren ondertussen opgebruikt en de collega die mijn nieuwe taken doorgeeft was drie dagen ziek.",
+      "Daardoor heb ik de tijd gebruikt om mijn bestaande code verder te verfijnen en extra details af te werken.",
+      "Hoewel het minder spectaculair was, was dit een nuttige dag om kwaliteit te verbeteren en code netter af te ronden."
+    ],
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["ihh", "azure-devops", "refactoring", "kwaliteit"]
+  },
+  {
+    "id": "2026-02-10",
+    "title": "Meer context over IHH en verder met donations",
+    "date": "dinsdag 10 februari 2026",
+    "excerpt": "Na een inhoudelijke meeting kreeg ik het volledige functionele beeld van IHH en kon ik opnieuw gericht verderwerken.",
+    "content": [
+      "Omdat mijn vorige taken afgerond waren, kon ik in de voormiddag niet meteen verder aan IHH.",
+      "We kregen dinsdag ook bezoek van mijn stagebegeleider, wat een goed moment was om kort mijn voortgang toe te lichten.",
+      "Ik had een meeting met Mucahid waarin hij het project in detail uitlegde: de volledige flow, belangrijke functionaliteiten en context achter de keuzes.",
+      "Met die extra uitleg kon ik opnieuw vlot verderwerken.",
+      "Ik heb daarna gewerkt aan de general donations en mockupdata vervangen door realistische testdata door zelf fake donaties toe te voegen."
+    ],
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["ihh", "meeting", "donations", "data", "workflow"]
   },
   {
     "id": "2026-02-11",
-    "title": "API verkennen en eerste bijdrage",
-    "date": "11 februari 2026",
-    "excerpt": "Ik heb de API-structuur verkend en een eerste bijdrage geleverd in een bestaande React-component.",
+    "title": "Afwezig door programmeerwedstrijd",
+    "date": "woensdag 11 februari 2026",
+    "excerpt": "Vandaag was ik niet op kantoor wegens deelname aan de Vlaamse programmeerwedstrijd in Hasselt.",
     "content": [
-      "Vandaag heb ik de backend API-documentatie gelezen en endpoints getest met Postman. Dat gaf me meer inzicht in hoe data doorheen de applicatie stroomt.",
-      "Daarna heb ik in de frontend een kleine component aangepast zodat foutmeldingen duidelijker worden weergegeven. Mijn begeleider heeft de wijziging nagekeken en feedback gegeven.",
-      "Morgen wil ik werken aan een nettere UI voor dezelfde flow en de wijziging verder uitbreiden."
+      "Vandaag was ik niet aanwezig op kantoor.",
+      "Ik had dit vooraf met Mucahid afgestemd, omdat ik deelnam aan de Vlaamse programmeerwedstrijd in Hasselt.",
+      "De dag eindigde bijzonder goed: ik behaalde de eerste plaats."
     ],
-    "images": ["/images/posts/day-2.svg"],
-    "tags": ["react", "api", "learning"]
+    "images": ["/images/posts/cert.png"],
+    "tags": ["afwezig", "programmeerwedstrijd", "hasselt", "prestatie"]
+  },
+  {
+    "id": "2026-02-12",
+    "title": "Terug op kantoor en focus op voortgang",
+    "date": "donderdag 12 februari 2026",
+    "excerpt": "Verder gewerkt aan IHH, positieve reacties gekregen en een verplaatste introductie ingepland voor volgende week.",
+    "content": [
+      "Vandaag heb ik opnieuw verder gewerkt aan het IHH-project.",
+      "Op kantoor kreeg ik felicitaties omdat ik gisteren eerste plaats had behaald in de programmeerwedstrijd.",
+      "Voor de rest verliep de dag rustig en kon ik vooral gefocust verderwerken.",
+      "Ik zou normaal ook een introductie krijgen over Microsoft Power Platform, maar die sessie is uitgesteld naar waarschijnlijk volgende week."
+    ],
+    "images": ["/images/posts/return-logo.png"],
+    "tags": ["ihh", "power-platform", "planning", "kantoor"]
   }
 ]

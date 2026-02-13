@@ -1,44 +1,47 @@
-﻿import PageHeader from '../components/PageHeader'
+import PageHeader from '../components/PageHeader'
 
 function AboutPage() {
   return (
     <>
       <PageHeader
         title="Over mij"
-        subtitle="Mini-cv, stagecontext en links naar mijn professionele profielen."
+        subtitle="Compacte cv met mijn profiel, opleiding, ervaring en technische skills."
       />
 
       <section className="container-page pb-16 pt-10">
-        <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr]">
+        <div className="grid gap-8 xl:grid-cols-[1fr_1.4fr]">
           <aside className="card-surface p-6">
             <img
-              src="/images/profile-placeholder.svg"
+              src="/images/profile-pic.jpeg"
               alt="Profielfoto"
-              className="h-72 w-full rounded-xl object-cover"
+              className="h-64 w-full rounded-xl object-cover object-top sm:h-72"
             />
-            <h2 className="mt-5 text-2xl font-semibold text-brand-navy">Jouw Naam</h2>
-            <p className="mt-2 text-slate-600">Software Engineering Student</p>
+            <h2 className="mt-5 text-2xl font-semibold text-brand-navy">Ismail Khizirov</h2>
+            <p className="mt-2 text-slate-600">Graduate Programming Student - AP Hogeschool</p>
             <div className="mt-6 space-y-2 text-sm text-slate-600">
+              <p>Adres: Jan Moorkensstraat 12, 2600 Berchem</p>
+              <p>Telefoon: 0471 65 04 47</p>
+              <p>E-mail: ismailkhizirov@gmail.com</p>
               <p>
                 LinkedIn:{' '}
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/ismail-khizirov/"
                   target="_blank"
                   rel="noreferrer"
                   className="font-medium text-brand-cyan hover:underline"
                 >
-                  linkedin.com/in/jouw-profiel
+                  linkedin.com/in/ismail-khizirov
                 </a>
               </p>
               <p>
                 GitHub:{' '}
                 <a
-                  href="https://github.com"
+                  href="https://github.com/IKHIZIROV"
                   target="_blank"
                   rel="noreferrer"
                   className="font-medium text-brand-cyan hover:underline"
                 >
-                  github.com/jouw-gebruikersnaam
+                  github.com/IKHIZIROV
                 </a>
               </p>
             </div>
@@ -46,34 +49,43 @@ function AboutPage() {
 
           <div className="space-y-6">
             <article className="card-surface p-6">
-              <h3 className="text-xl font-semibold text-brand-navy">Mini-cv</h3>
-              <ul className="mt-4 space-y-2 text-slate-600">
-                <li><span className="font-semibold text-slate-700">Opleiding:</span> Bachelor Toegepaste Informatica</li>
-                <li><span className="font-semibold text-slate-700">Richting:</span> Software Engineering</li>
-                <li><span className="font-semibold text-slate-700">Skills:</span> TypeScript, React, Node.js, SQL, Git</li>
-                <li><span className="font-semibold text-slate-700">Tools:</span> VS Code, Postman, Jira, Figma</li>
-              </ul>
-            </article>
-
-            <article className="card-surface p-6">
-              <h3 className="text-xl font-semibold text-brand-navy">Stage-informatie</h3>
-              <ul className="mt-4 space-y-2 text-slate-600">
-                <li><span className="font-semibold text-slate-700">Bedrijf:</span> Return (aanpasbaar)</li>
-                <li><span className="font-semibold text-slate-700">Locatie:</span> Stad, land (aanpasbaar)</li>
-                <li><span className="font-semibold text-slate-700">Rol:</span> Software Engineering Intern</li>
-                <li>
-                  <span className="font-semibold text-slate-700">Taken:</span> Frontend development, bugfixing,
-                  API-koppelingen, code reviews en documentatie.
-                </li>
-              </ul>
-            </article>
-
-            <article className="card-surface p-6">
-              <h3 className="text-xl font-semibold text-brand-navy">Doel van deze blog</h3>
+              <h3 className="text-xl font-semibold text-brand-navy">Profiel</h3>
               <p className="mt-4 leading-relaxed text-slate-600">
-                Deze website geeft een transparant overzicht van mijn dagelijkse stageactiviteiten. Ze helpt mijn school,
-                mentor en stagebegeleider om mijn groei, inzet en leerproces op te volgen.
+                Ik ben een 21-jarige student Graduate Programming aan AP Hogeschool. Ik heb ervaring in .NET,
+                webdevelopment en game development, en ik wil mijn technische skills verder verdiepen via
+                praktijkgerichte projecten.
               </p>
+            </article>
+
+            <article className="card-surface p-6">
+              <h3 className="text-xl font-semibold text-brand-navy">Opleiding</h3>
+              <ul className="mt-4 space-y-2 text-slate-600">
+                <li><span className="font-semibold text-slate-700">AP Hogeschool:</span> Graduate Programming (huidig, 2e jaar)</li>
+                <li><span className="font-semibold text-slate-700">AP Hogeschool:</span> Bachelor IT & Software (2 jaar, niet afgerond)</li>
+                <li><span className="font-semibold text-slate-700">Secundair:</span> Business Diploma</li>
+              </ul>
+            </article>
+
+            <article className="card-surface p-6">
+              <h3 className="text-xl font-semibold text-brand-navy">Werkervaring</h3>
+              <ul className="mt-4 space-y-2 text-slate-600">
+                <li><span className="font-semibold text-slate-700">Flora Carpets (2021 - september 2025):</span> Industrial Photography, IT-technician en Odoo web designer</li>
+                <li><span className="font-semibold text-slate-700">Quick Berchem Pulhof (2023 - 2024):</span> Student worker</li>
+                <li><span className="font-semibold text-slate-700">Greencare, Stad Mortsel (zomer 2022):</span> Student worker</li>
+              </ul>
+            </article>
+
+            <article className="card-surface p-6">
+              <h3 className="text-xl font-semibold text-brand-navy">Projecten & skills</h3>
+              <ul className="mt-4 space-y-2 text-slate-600">
+                <li><span className="font-semibold text-slate-700">Projecten:</span> UEFN (Verse), Roblox Studio (Luau), websites, JS-games en API-projecten</li>
+                <li><span className="font-semibold text-slate-700">Programmeertalen:</span> C#, JavaScript, TypeScript, HTML, CSS, SQL, Verse, Luau</li>
+                <li><span className="font-semibold text-slate-700">Frameworks & libraries:</span> React, Next.js, React Native, Node.js, Express.js, Hono, ASP.NET, TanStack Query, TanStack Router, Zod, Drizzle ORM</li>
+                <li><span className="font-semibold text-slate-700">Databases:</span> PostgreSQL, MongoDB</li>
+                <li><span className="font-semibold text-slate-700">DevOps & tools:</span> Git, GitHub, Azure DevOps, Docker, Docker Compose, Odoo, Postman, VS Code</li>
+                <li><span className="font-semibold text-slate-700">Testing:</span> Basiskennis van unit testing en end-to-end testing</li>
+                <li><span className="font-semibold text-slate-700">Talen:</span> Nederlands, Engels, Frans, Russisch, Tsjetsjeens, Turks en Duits</li>
+              </ul>
             </article>
           </div>
         </div>
