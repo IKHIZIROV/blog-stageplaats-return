@@ -2,7 +2,6 @@ import PageHeader from '../components/PageHeader'
 import postsData from '../data/posts.json'
 import type { Post } from '../types/post'
 
-const DEFAULT_POST_IMAGE = '/images/posts/default-return.svg'
 const DUTCH_LOCALE = 'nl-BE'
 
 type WeekGroup = {
@@ -72,6 +71,12 @@ const weekGroups = posts.reduce<WeekGroup[]>((groups, post) => {
   return groups
 }, [])
 
+/** Bepaalt het dagnummer van een post (dag 1 = eerste stagedag). Posts staan op datum aflopend. */
+function getDayNumber(postId: string): number {
+  const index = posts.findIndex((p) => p.id === postId)
+  return index === -1 ? 1 : posts.length - index
+}
+
 function BlogPage() {
   return (
     <>
@@ -118,21 +123,30 @@ function BlogPage() {
 
                   <div className="space-y-6">
                     {group.posts.map((post) => {
-                      const postImages = post.images.filter((image) => image.trim().length > 0)
-                      const visibleImages = postImages.length > 0 ? postImages : [DEFAULT_POST_IMAGE]
+                      const dayNumber = getDayNumber(post.id)
+                      const customImages = post.images.filter(
+                        (img) => img.trim().length > 0 && !img.includes('return-logo'),
+                      )
+                      const hasCustomImage = customImages.length > 0
 
                       return (
                         <article key={`${post.id}-full`} className="card-surface overflow-hidden">
-                          <div className="border-b border-slate-200 bg-slate-50">
-                            {visibleImages.map((image, index) => (
-                              <img
-                                key={`${post.id}-${image}`}
-                                src={image}
-                                alt={`${post.title} afbeelding ${index + 1}`}
-                                className="block h-44 w-full bg-white object-contain sm:h-56"
-                                loading="lazy"
-                              />
-                            ))}
+                          <div className="flex h-44 border-b border-slate-200 bg-slate-50 sm:h-56">
+                            <div className="flex shrink-0 items-center pl-6 sm:pl-8 md:min-w-[200px]">
+                              <span className="text-6xl font-bold tracking-tight text-brand-cyan sm:text-7xl md:text-8xl">
+                                Dag {dayNumber}
+                              </span>
+                            </div>
+                            {hasCustomImage && (
+                              <div className="relative flex-1 min-w-0 overflow-hidden rounded-r-2xl bg-white pr-0">
+                                <img
+                                  src={customImages[0]}
+                                  alt=""
+                                  className="h-full w-full object-contain object-right"
+                                  loading="lazy"
+                                />
+                              </div>
+                            )}
                           </div>
 
                           <div className="p-5 sm:p-6">

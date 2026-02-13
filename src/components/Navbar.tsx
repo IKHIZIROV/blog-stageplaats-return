@@ -1,4 +1,4 @@
-﻿import { NavLink } from 'react-router-dom'
+import { ViewTransitionNavLink } from './ViewTransitionLink'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -8,29 +8,32 @@ const links = [
 
 function Navbar() {
   return (
-    <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="container-page flex min-h-16 flex-wrap items-center justify-between gap-3 py-2 sm:h-20 sm:flex-nowrap sm:py-0">
-        <NavLink to="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold tracking-tight text-brand-navy sm:text-3xl">RETURN</span>
-          <span className="hidden text-sm text-slate-500 sm:block">Stageblog</span>
-        </NavLink>
+    <header className="sticky top-0 z-20 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-md">
+      <div className="container-page flex min-h-14 items-center justify-between gap-4 py-3 sm:min-h-16 sm:py-4">
+        <ViewTransitionNavLink
+          to="/"
+          className="flex items-baseline gap-2 rounded-lg outline-none transition focus-visible:ring-2 focus-visible:ring-brand-cyan focus-visible:ring-offset-2"
+        >
+          <span className="text-xl font-bold tracking-tight text-brand-navy sm:text-2xl">RETURN</span>
+          <span className="hidden text-sm font-medium text-slate-500 sm:block">Stageblog</span>
+        </ViewTransitionNavLink>
 
-        <nav className="flex w-full items-center justify-end gap-2 sm:w-auto sm:gap-3">
+        <nav className="flex items-center gap-1 sm:gap-2" aria-label="Hoofdnavigatie">
           {links.map((link) => (
-            <NavLink
+            <ViewTransitionNavLink
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
                 [
-                  'rounded-lg px-3 py-2 text-sm font-medium transition sm:px-4',
+                  'rounded-lg px-3 py-2 text-sm font-medium outline-none transition duration-200 focus-visible:ring-2 focus-visible:ring-brand-cyan focus-visible:ring-offset-2 sm:px-4',
                   isActive
-                    ? 'bg-brand-cyan text-white'
-                    : 'text-slate-700 hover:bg-slate-100 hover:text-brand-navy',
+                    ? 'bg-brand-cyan text-white shadow-sm'
+                    : 'text-slate-600 hover:bg-slate-100 hover:text-brand-navy active:bg-slate-200',
                 ].join(' ')
               }
             >
               {link.label}
-            </NavLink>
+            </ViewTransitionNavLink>
           ))}
         </nav>
       </div>

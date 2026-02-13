@@ -1,4 +1,4 @@
-﻿@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -30,4 +30,33 @@ a {
 
 .section-subtitle {
   @apply mt-3 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg;
+}
+
+/* View Transitions API: smooth morph between pages */
+@supports (view-transition-name: none) {
+  ::view-transition-old(root) {
+    animation: view-transition-fade-out 0.2s ease-out both;
+  }
+
+  ::view-transition-new(root) {
+    animation: view-transition-fade-in 0.25s ease-out both;
+  }
+}
+
+@keyframes view-transition-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes view-transition-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
