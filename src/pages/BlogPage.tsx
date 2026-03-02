@@ -34,11 +34,12 @@ const WEEKLY_RECAPS: Record<string, string[]> = {
     'Dit was een van de meest leerrijke weken tot nu toe, vooral omdat theorie en praktijk mooi samenkwamen.',
   ],
   '2026-02-23': [
-    'Ook met minder nieuwe tickets bleef deze week productief en gefocust.',
-    'Ik heb bewust tijd gestoken in het uitwerken van de Qurban-flow, kleine verbeteringen doorgevoerd en feedback op oudere pull requests afgewerkt.',
-    'De thuiswerkdag gaf extra concentratie, waardoor ik merkbaar meer kon afronden op korte tijd.',
-    'Door die combinatie van planning, afwerking en focus voelde de voortgang heel stabiel.',
-    'Deze week bevestigde voor mij dat je ook zonder volle backlog veel waarde kan leveren door slim te blijven itereren.',
+    'Week 4 begon met minder nieuwe tickets in DevOps, maar ik ben wel gefocust blijven doorwerken op IHH.',
+    'Ik heb de Qurban-flow verder uitgewerkt, open feedback van eerdere pull requests verwerkt en verschillende kleine verbeteringen doorgevoerd zodat alles consistenter werd.',
+    'De thuiswerkdag gaf veel concentratie en zorgde ervoor dat ik in korte tijd merkbaar meer kon afwerken op het Qurban-gedeelte.',
+    'Daarnaast had ik samen met Efekan een briefing over PortOfX, een logistiek templateproject waarvoor we een reeks DevOps-aanpassingen zullen doen zodra we extra uitleg krijgen.',
+    'Tegelijk bleef ik afstemmen met Mucahid over de timing van IHH. Omdat de deadline dichterbij komt, is de focus nu: Qurban volledig afwerken en daarna strak doorpakken op de resterende logica.',
+    'De week sloot af met mijn eerste intervisiemoment op school, waar ik met medestudenten en mijn stagebegeleider terugblikte op de eerste vier stageweken. Het was interessant om ervaringen te vergelijken en nieuwe inzichten mee te nemen.',
   ],
 }
 

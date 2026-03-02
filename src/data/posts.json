@@ -400,5 +400,50 @@
       "qurban",
       "focus"
     ]
+  },
+  {
+    "id": "2026-02-26",
+    "title": "Nieuwe briefing voor PortOfX en bijna klaar met Qurban",
+    "date": "donderdag 26 februari 2026",
+    "excerpt": "Samen met Efekan een briefing gekregen over PortOfX, veel DevOps-taken ontvangen en tegelijk bijna afgerond met het Qurban-gedeelte van IHH.",
+    "content": [
+      "Vandaag had ik samen met Efekan (een andere stagiair) een meeting met Souhaib over het project PortOfX.",
+      "PortOfX is een templateproject voor logistieke bedrijven. Het project is al bijna af, maar wij kregen een hele lijst DevOps-taken om nog aanpassingen te doen.",
+      "We hebben vandaag vooral uitleg gekregen over het project en de taken. We starten er nog niet direct aan, omdat we eerst extra uitleg krijgen van Mucahid.",
+      "De Power Platform-les van vandaag met Mucahid ging normaal doorgaan, maar is jammer genoeg afgelast.",
+      "Voor de rest van de dag heb ik verder gewerkt aan IHH. Het Qurban-gedeelte is nu bijna klaar; er zijn nog maar enkele kleine wijzigingen nodig.",
+      "Mucahid vroeg ook hoe ver ik stond met het project. Hij gaf mee dat het project binnen ongeveer een maand klaar moet zijn en vroeg of ik het liever volledig zelf afwerk of liever met extra hulp. Ik heb aangegeven dat hulp zeker welkom is als dat nodig is."
+    ],
+    "images": [
+      "/images/posts/return-logo.png"
+    ],
+    "tags": [
+      "ihh",
+      "qurban",
+      "portofx",
+      "devops",
+      "planning"
+    ]
+  },
+  {
+    "id": "2026-02-27",
+    "title": "Eerste intervisiemoment op school",
+    "date": "vrijdag 27 februari 2026",
+    "excerpt": "Tijdens mijn eerste intervisie heb ik met medestudenten en mijn stagebegeleider teruggeblikt op de eerste vier stageweken.",
+    "content": [
+      "Vandaag had ik mijn eerste intervisiemoment op school.",
+      "Ik zat samen met zes andere studenten en mijn stagebegeleider om te vertellen wat we allemaal gedaan hebben in de eerste vier weken van onze stage.",
+      "We bespraken verschillende onderwerpen zoals het bedrijf, de locatie, het product, de gebruikte technologieen en het aantal collega's.",
+      "Het was leuk om de ervaringen van mijn medestudenten te horen en te zien hoe verschillend elke stageplek kan zijn."
+    ],
+    "images": [
+      "/images/posts/return-logo.png"
+    ],
+    "tags": [
+      "school",
+      "intervisie",
+      "reflectie",
+      "stage"
+    ]
   }
 ]
